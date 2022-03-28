@@ -11,9 +11,12 @@ class MaListeTest {
 
     public void test_AjoutElement(){
         MaListe l = new MaListe();
-        l.ajoutFin(1);
+        l.ajoutFin(2);
         assertEquals("La taille de la liste devrait etre 1", 1, l.taille());
+        assertEquals("La liste devrait contenir un element '2' en fin", l.taille()-1, l.indice(2));
     }
+
+
 
 
 
